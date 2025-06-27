@@ -1,17 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #f9fdf9, #e7f3f1);
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #6a9e76;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: #ffffff;
+  border-top: 4px solid #6a9e76;
+  border-bottom: 4px solid #6a9e76;
+}
+
+.intro img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.intro .texto {
+  max-width: 500px;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #6a9e76;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #4f7c59;
+}
+
+#saiba-mais-info {
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+
+.oculto {
+  display: none;
+}
+
+.interativo {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #eef5ec;
+}
+
+#canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 20px 0;
+}
+
+footer {
+  background-color: #4d4d4d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
     text-align: center;
-    background-color: #f0f0f0;
-}
+  }
 
-h1 {
-    color: #333;
-}
-
-.minha-imagem {
-    width: 300px;
-    height: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  .intro img {
+    margin-top: 1.5rem;
+  }
 }

@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Meu Site com Imagem</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Onde o Campo Encontra a Cidade</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
 </head>
 <body>
-    <h1>Bem-vindo ao meu site!</h1>
-    <img src="imagem.jpg" alt="Descrição da imagem" class="minha-imagem">
+  <header>
+    <h1>Onde o Campo Encontra a Cidade</h1>
+    <p>Integra o mundo rural e urbano em harmonia, destacando sua colaboração para um futuro melhor.</p>
+  </header>
+
+  <section class="intro">
+    <img src="img/fundo.jpg" alt="Conexão Campo e Cidade">
+    <div class="texto">
+      <h2>Campo e Cidade: Uma Parceria Essencial</h2>
+      <p>
+        O campo e a cidade são partes complementares da nossa sociedade.
+        Essa troca fortalece a economia, a cultura e a sustentabilidade.
+      </p>
+      <button id="botao-saiba-mais">Saiba mais</button>
+      <div id="saiba-mais-info" class="oculto">
+        <p>
+          Essa integração entre espaços permite que alimentos, energia e recursos fluam do campo para as cidades, enquanto tecnologia, educação e saúde retornam ao interior. Juntas, cidade e campo constroem um futuro melhor.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="interativo">
+    <h2>Representação Visual</h2>
+    <p>Veja abaixo uma animação representando a união entre os elementos urbanos e rurais:</p>
+    <div id="canvas-container"></div>
+  </section>
+
+  <footer>
+    Feito por Emili Berci. Todos os direitos reservados.
+  </footer>
+
+  <script src="sketch.js"></script>
+  <script>
+    document.getElementById("botao-saiba-mais").addEventListener("click", function () {
+      document.getElementById("saiba-mais-info").classList.toggle("oculto");
+    });
+  </script>
 </body>
 </html>
